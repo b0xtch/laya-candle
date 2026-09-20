@@ -32,3 +32,7 @@ maintenance advisories remain visible in `cargo audit`:
 These are unmaintained-crate notices, not reported vulnerabilities. Track upstream
 replacements when updating dependencies. CI audits the lockfile without advisory
 exemptions; the dated result above is not a continuing security guarantee.
+
+The optional Python reference environment is audited separately, including its
+resolved dependencies. Transformers is pinned to patched release 5.10.4; the
+5.0.0 version recorded in the golden fixture describes historical provenance.

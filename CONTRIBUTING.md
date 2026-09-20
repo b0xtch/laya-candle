@@ -35,6 +35,12 @@ cargo audit
 cargo deny --locked --all-features check licenses sources
 ```
 
+For changes to the optional Python reference environment, install pip-audit 2.10.1
+in an isolated environment and run
+`python -m pip_audit --strict -r tests/requirements-reference.txt`.
+Validate dependency upgrades against the existing golden fixture before changing
+reference tooling; historical version metadata is provenance, not an install pin.
+
 For packaging changes, run `cargo package --locked --allow-dirty` and inspect
 `cargo package --list --allow-dirty`. The archive must contain both licenses,
 NOTICE, the Metal sources, and test fixtures. Pretrained weights and credentials

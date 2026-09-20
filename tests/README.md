@@ -13,6 +13,11 @@ Reference provenance:
 - Exact prepared tokens and marker positions; raw logit error below `2e-5`;
   formatted numeric output error at most `0.00011`.
 
+The fixture records its original generation environment. The maintained reference
+tooling now pins the patched Transformers 5.10.4 release. Re-exporting all seven
+cases with that release produced identical prepared inputs, raw logits, and
+formatted predictions; the checked-in golden data and tolerances remain unchanged.
+
 `reference.py` preserves the upstream fixture generator and full-checkpoint
 comparison checks. It is development tooling only. Install its pinned dependencies
 in a separate environment and check out the pinned upstream revision:
