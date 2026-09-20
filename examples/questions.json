@@ -1,0 +1,16 @@
+{
+  "department": {
+    "type": "choice",
+    "instructions": "Which department should handle this request?",
+    "criteria": {"billing": "payments and refunds", "technical": "bugs and errors", "sales": "new purchases"}
+  },
+  "urgency": {
+    "type": "score",
+    "instructions": "How urgent is this request?",
+    "criteria": ["not urgent", "soon", "critical deadline"]
+  },
+  "refund_requested": {
+    "type": "noul",
+    "instructions": "Does the customer request a refund?"
+  }
+}

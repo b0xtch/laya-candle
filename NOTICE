@@ -1,0 +1,34 @@
+laya-candle
+Independent Rust/Candle inference implementation, 2026.
+
+This project adapts model architecture, prompt construction, calibration, and
+output formatting from Laya by Convai Innovations and contributors:
+Copyright Convai Innovations and Laya contributors.
+https://github.com/NandhaKishorM/laya
+Revision: 42626c348753fbb17572a813127df2278a1ec527
+Licensed under the Apache License, Version 2.0.
+
+The independent MLX implementation by mizorewww informed configuration handling,
+padding behavior, tokenizer loading, and numerical validation:
+Copyright 2026 laya-mlx contributors.
+https://github.com/mizorewww/laya-mlx
+Revision: fc1df62828a3fedf4d8229fdac1cbd85f1cdf337
+Licensed under the Apache License, Version 2.0.
+
+The ModernBERT architecture follows Hugging Face Transformers and ModernBERT.
+Runtime tensor operations and Metal attention are provided by Candle.
+This project is not an official release of Convai Innovations, Hugging Face,
+or the Laya-MLX authors. Downloaded pretrained weights retain their own notices.
+
+src/mlx_gemm_v0322.metal incorporates MLX GPU kernel sources by Apple Inc.,
+under the MIT License embedded in that file. The source is pinned to MLX v0.32.2,
+revision 1f8e74e3f12f31365464a6867c6579f0e9b29d85:
+https://github.com/ml-explore/mlx/tree/1f8e74e3f12f31365464a6867c6579f0e9b29d85/mlx/backend/metal/kernels
+Original source paths are preserved as BEGIN comments in the vendored file.
+The source is flattened and specialized for this project's Metal dispatch.
+Its MIT license is also distributed in LICENSE-MIT.
+
+Rust implementations of Laya architecture, configuration, prompts and calibration
+are modified reimplementations for Candle, not unmodified upstream files.
+The test checkpoint and golden outputs are synthetic fixtures generated with
+upstream Laya; original pretrained model weights are not distributed here.

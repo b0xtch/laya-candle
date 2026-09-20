@@ -1,0 +1,13 @@
+/target/
+/.venv/
+/models/
+/validation/
+/benchmarks/
+__pycache__/
+.DS_Store
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.log

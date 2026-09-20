@@ -1,0 +1,155 @@
+{
+  "version": "1.0",
+  "truncation": null,
+  "padding": null,
+  "added_tokens": [
+    {
+      "id": 0,
+      "content": "[PAD]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 1,
+      "content": "[CLS]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 2,
+      "content": "[SEP]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 3,
+      "content": "[MASK]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 4,
+      "content": "[UNK]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    }
+  ],
+  "normalizer": null,
+  "pre_tokenizer": {
+    "type": "Whitespace"
+  },
+  "post_processor": {
+    "type": "TemplateProcessing",
+    "single": [
+      {
+        "Sequence": {
+          "id": "A",
+          "type_id": 0
+        }
+      }
+    ],
+    "pair": [
+      {
+        "Sequence": {
+          "id": "A",
+          "type_id": 0
+        }
+      },
+      {
+        "Sequence": {
+          "id": "B",
+          "type_id": 1
+        }
+      }
+    ],
+    "special_tokens": {}
+  },
+  "decoder": null,
+  "model": {
+    "type": "WordLevel",
+    "vocab": {
+      "[PAD]": 0,
+      "[CLS]": 1,
+      "[SEP]": 2,
+      "[MASK]": 3,
+      "[UNK]": 4,
+      "choice": 5,
+      "score": 6,
+      "noul": 7,
+      "question": 8,
+      ":": 9,
+      "?": 10,
+      "Please": 11,
+      "refund": 12,
+      "the": 13,
+      "duplicate": 14,
+      "charge": 15,
+      "today": 16,
+      ".": 17,
+      "billing": 18,
+      "technical": 19,
+      "sales": 20,
+      "refunds": 21,
+      "bugs": 22,
+      "purchases": 23,
+      "low": 24,
+      "medium": 25,
+      "high": 26,
+      "level": 27,
+      "false": 28,
+      "true": 29,
+      "no": 30,
+      "yes": 31,
+      "statement": 32,
+      "holds": 33,
+      "does": 34,
+      "not": 35,
+      "hold": 36,
+      "Which": 37,
+      "department": 38,
+      "How": 39,
+      "urgent": 40,
+      "Is": 41,
+      "a": 42,
+      "requested": 43,
+      "0": 44,
+      "1": 45,
+      "2": 46,
+      "department_0": 47,
+      "department_1": 48,
+      "department_2": 49,
+      "department_3": 50,
+      "department_4": 51,
+      "department_5": 52,
+      "department_6": 53,
+      "department_7": 54,
+      "department_8": 55,
+      "department_9": 56,
+      "department_10": 57,
+      "department_11": 58,
+      "department_12": 59,
+      "department_13": 60,
+      "department_14": 61,
+      "department_15": 62,
+      "department_16": 63,
+      "department_17": 64,
+      "department_18": 65
+    },
+    "unk_token": "[UNK]"
+  }
+}
